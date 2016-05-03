@@ -18,7 +18,7 @@ public class MainParam extends BaseParam implements HttpCycleContext{
         param.addFormDataPart("limit", 12);
         HTTP_TASK_KEY = key;
         return param;
-    }
+    } 
     @Override
     public String getHttpTaskKey(){
         return HTTP_TASK_KEY;
