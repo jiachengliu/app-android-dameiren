@@ -1,0 +1,23 @@
+apply plugin: 'com.android.library'
+
+//http://baike.baidu.com/link?url=T2ta9uAanZk_T0r4ajcYXSP7FJE7IrSqBoz3nYMXJnpBbVpICGNL4GPnEN1-ST9w83OAfqj5T6HVXm0bBfSyTa
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 7
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false;
+    }
+}
